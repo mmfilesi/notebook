@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SourceSansPro-Regular'), local('SourceSansPro-Regular'),
+    url('./SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('SourceSansPro-RegularItalic'), local('SourceSansPro-RegularItalic'),
+    url('./SourceSansPro-RegularItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  font-style: normal;
+  font-weight: 900;
+  src: local('SourceSansPro-Bold'), local('SourceSansPro-Bold'),
+    url('./SourceSansPro-Bold.ttf') format('truetype');
+}

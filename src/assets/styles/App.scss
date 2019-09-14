@@ -1,3 +1,14 @@
 @import './base/reset';
+@import './base/ocss';
+
+@import './abstracts/variables';
+@import './abstracts/mixins';
 
 @import './components/task';
+@import './components/tasks';
+
+@import './fonts/fonts';
+
+@import './icons/icons';
+
+@import 'themes/theme';

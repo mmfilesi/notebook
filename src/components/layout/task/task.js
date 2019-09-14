@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// https://material.io/resources/icons/?icon=warning&style=baseline
+
 const task = ( {task = {}, editTask, toggleTask, deleteTask} ) => {
   console.log(task)
   return (
@@ -12,7 +14,7 @@ const task = ( {task = {}, editTask, toggleTask, deleteTask} ) => {
       </div>
       <div className="task__content">{task.content}</div>
       <div className="task__actions">
-        <span onClick={(e) => editTask(task)}>edit</span>
+        <span className="icons icon-comment-o" onClick={(e) => editTask(task)}>edit</span>
         <span onClick={(e) => toggleTask(task.id)}>done</span>
         <span onClick={(e) => deleteTask(task.id)}>trash</span>
       </div>

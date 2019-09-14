@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { Suspense, lazy }  from 'react';
 import { Provider } from 'react-redux'; 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import store from './core/redux/store';
 import './assets/styles/App.scss';
 
+import MainHeader from './components/layout/main-header/main-header';
+import MainFooter from './components/layout/main-footer/main-footer';
 
-import Home from './views/home/home';
+const Home = lazy(() => import('./views/home/home'));
+const Categories = lazy(() => import('./views/categories/categories'));
 
-// const Home = React.lazy(() => import('./views/home/home'));
-
-
-function App() {
+function App() { 
   return (
-    <Provider store={store}>
+    <Provider store={store}>     
+
       <Router>
-        <Route path="/" exact component={Home}></Route>
-        
+        <div className="mainContainer">
+          <MainHeader></MainHeader>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Switch>   
+                <Route path="/" exact component={Home}></Route>
+                <Route path="/categories" exact component={Categories}></Route>
+              </Switch>
+              </Suspense>
+            <MainFooter></MainFooter>
+        </div>
       </Router>
+       
     </Provider>
   );
 }

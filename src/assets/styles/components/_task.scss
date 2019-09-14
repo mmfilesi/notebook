@@ -1,20 +1,37 @@
 .task {
-  border: 1px solid red;
+  color: $eggplant;
+  width: 25%;
+  height: 180px;
+  margin: 0.5em;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background: #eda;
+  border-radius: $border-radius-sm;
+  @include shadow-01;
+  position: relative;
+
+  &:hover {
+    @include shadow-02;
+  }
 
   .task__header {
-
+    font-size: 1.2em;
+    font-family: $fontBase-family-bold;
+    margin-bottom: .5em;
   }
 
   .task__aside {
-
+    font-size: .8em;
+    margin-bottom: .5em;
   }
 
   .task__content {
-
+    line-height: 160%;
   }
 
   .task__actions {
-
+    position: absolute;
+    bottom: 1em;
   }
 
 }

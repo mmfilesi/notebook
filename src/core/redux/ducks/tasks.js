@@ -19,6 +19,22 @@ const initialState = {
       category: 'JS',
       tags: ['React', 'Vue'],
       status: 'done'
+    },
+    {
+      id: '11',
+      title: 'adasd',
+      content: 'Oatra nota genial',
+      category: 'JS',
+      tags: ['React', 'Vue'],
+      status: 'done'
+    },
+    {
+      id: '111',
+      title: 'initialState',
+      content: 'initialState nota genial',
+      category: 'JS',
+      tags: ['React', 'Vue'],
+      status: 'done'
     }
   ]
 };
