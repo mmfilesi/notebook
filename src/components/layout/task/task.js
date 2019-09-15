@@ -14,9 +14,15 @@ const task = ( {task = {}, editTask, toggleTask, deleteTask} ) => {
       </div>
       <div className="task__content">{task.content}</div>
       <div className="task__actions">
-        <span className="icons icon-comment-o" onClick={(e) => editTask(task)}>edit</span>
-        <span onClick={(e) => toggleTask(task.id)}>done</span>
-        <span onClick={(e) => deleteTask(task.id)}>trash</span>
+        <div className="task__action">
+          <span className="icon-check-square-o" onClick={(e) => editTask(task)}></span>
+        </div>
+        <div className="task__action">
+          <span className="icon-pencil" onClick={(e) => toggleTask(task.id)}></span>
+        </div>
+        <div className="task__action">
+          <span className="icon-trash" onClick={(e) => deleteTask(task.id)}></span>
+        </div>
       </div>
 
     </section>

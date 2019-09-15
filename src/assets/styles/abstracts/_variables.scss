@@ -16,6 +16,20 @@
   $fontBase-size: 16px;
 
 /* ================================
+    media queries
+    https://cheewebdevelopment.com/element-first-scss-media-queries/
+  ================================ */
+
+  $breakpoints: (
+    phone-sm: 420px,
+    phone: 767px,
+    tablet: 768px,
+    tablet-lg: 1024px,
+    desktop: 1025px,
+    desktop-lg: 1600px
+  );
+
+/* ================================
     proportions
   ================================ */
 

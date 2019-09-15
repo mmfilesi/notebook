@@ -4,8 +4,12 @@
 @import './abstracts/variables';
 @import './abstracts/mixins';
 
+@import './components/ico-button';
 @import './components/task';
 @import './components/tasks';
+
+@import './layout/header';
+@import './layout/footer';
 
 @import './fonts/fonts';
 

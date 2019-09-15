@@ -1,6 +1,6 @@
 .task {
   color: $eggplant;
-  width: 25%;
+  width: 20%;
   height: 180px;
   margin: 0.5em;
   padding: 0.5em;
@@ -8,7 +8,6 @@
   background: #eda;
   border-radius: $border-radius-sm;
   @include shadow-01;
-  position: relative;
 
   &:hover {
     @include shadow-02;
@@ -17,21 +16,38 @@
   .task__header {
     font-size: 1.2em;
     font-family: $fontBase-family-bold;
+    height: 20px;
+    overflow: hidden;
     margin-bottom: .5em;
+    margin-top: .5em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .task__aside {
     font-size: .8em;
     margin-bottom: .5em;
+    height: 15px;
+    overflow: hidden;
   }
 
   .task__content {
     line-height: 160%;
+    height: 70px;
+    margin-bottom: .5em;
+    overflow-y: auto;
   }
 
   .task__actions {
-    position: absolute;
-    bottom: 1em;
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    align-items: center;  
+  }
+
+  .task__action {
+    width: 25px;
+    cursor: pointer;
   }
 
 }

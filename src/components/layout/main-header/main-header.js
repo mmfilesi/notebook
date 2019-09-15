@@ -5,8 +5,8 @@ const MainHeader = (props) => {
 
   return (
     <Link to="/">
-      <header>
-        MainHeader
+      <header className="banner" role="banner" aria-level="1">
+        <h1>Study Notebook</h1>        
       </header>
     </Link>
   );

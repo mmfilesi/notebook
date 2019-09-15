@@ -24,7 +24,7 @@ function App() {
                 <Route path="/categories" exact component={Categories}></Route>
               </Switch>
               </Suspense>
-            <MainFooter></MainFooter>
+           {/*<MainFooter></MainFooter>*/}
         </div>
       </Router>
        

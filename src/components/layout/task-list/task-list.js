@@ -27,7 +27,7 @@ const TaskList = (props) => {
 
   return (
     <article className="tasks">
-      { props.tasks.length ? (
+      { props.tasks && props.tasks.length ? (
         props.tasks.map( (task) => {
           return (
             filterTasks(task) && 

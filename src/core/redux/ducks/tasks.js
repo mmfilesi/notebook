@@ -22,7 +22,7 @@ const initialState = {
     },
     {
       id: '11',
-      title: 'adasd',
+      title: 'adasd Oatra nota genial v Oatra nota genial',
       content: 'Oatra nota genial',
       category: 'JS',
       tags: ['React', 'Vue'],
@@ -30,6 +30,22 @@ const initialState = {
     },
     {
       id: '111',
+      title: 'initialState',
+      content: 'initialState nota genial',
+      category: 'JS',
+      tags: ['React', 'Vue'],
+      status: 'done'
+    },
+    {
+      id: '1121',
+      title: 'adasd Oatra nota genial v Oatra nota genial',
+      content: 'Oatra nota genial',
+      category: 'JS',
+      tags: ['React', 'Vue'],
+      status: 'done'
+    },
+    {
+      id: '11211',
       title: 'initialState',
       content: 'initialState nota genial',
       category: 'JS',

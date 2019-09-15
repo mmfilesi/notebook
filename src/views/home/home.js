@@ -7,7 +7,6 @@ const Home = (props) => {
 
   return (
     <div>
-      <SbButton label="add"></SbButton>
       <TaskList></TaskList>
     </div>
   );
